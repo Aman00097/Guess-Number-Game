@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+sans:wght@300;400&family=Montsrrat:wght@600$display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #350363;
+  --background: #ffe9db;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Monsterrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -5;
+}
+
+main {
+  width: 30vw;
+  text-align: center;
+  background-color: var(--background);
+  border: 0.8rem solid var(--dark);
+  border-radius: 1rem;
+  padding: 5rem 2rem;
+  color: #1f2933;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.overflow {
+  width: 85%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+#playbg {
+  width: 100%;
+  transition: all 0.5s linear;
+}
+#playbg:hover {
+  transform: scale(1.2);
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+button {
+  min-width: 85%;
+  border: 2px black;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  font-size: 2rem;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: var(--dark);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+button:hover {
+  background: #6d17bd;
+}
+
+/* Game Area */
+
+#gameArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#newGameButton button {
+  margin: 2rem 0;
+}
+
+input {
+  border: 0.1rem solid lightgray;
+  background: transparent;
+  margin: 3rem 0;
+  padding: 2rem 0;
+  width: 25rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.stats {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.info span {
+  font-size: 2rem;
+  color: #ff0511;
+}
+
+@media(max-width: 1000px){
+  main{
+    width: 40vw;
+  }
+}
+
+@media(max-width: 750px){
+  main{
+    width: 60vw;
+  }
+}
+
+@media(max-width: 600px){
+  main{
+    width: 80vw;
+  }
+}
+@media(max-width: 400px){
+  main{
+    width: 95vw;
+  }
+}
