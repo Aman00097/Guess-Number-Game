@@ -1,3 +1,4 @@
+window.addEventListener("load", () => {
 let computerGuess;
 let userGuess = [];
 let userGuessUpdate = document.getElementById('textOutput');
@@ -78,3 +79,5 @@ const hardMode = () => {
     maxGuess = 5;
     startGame();
 }
+});
+
