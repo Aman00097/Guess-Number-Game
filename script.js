@@ -1,4 +1,3 @@
-window.addEventListener("load", () => {
 let computerGuess;
 let userGuess = [];
 let userGuessUpdate = document.getElementById('textOutput');
@@ -7,9 +6,9 @@ let audio = new Audio('Image/move.mp3');
 
 const init = () => {
     computerGuess = Math.floor(Math.random() * 100);
-    // console.log(computerGuess);
     document.getElementById("newGameButton").style.display = "none";
     document.getElementById("gameArea").style.display = "none";
+    document.querySelector("body").style.display = "flex";
 };
 
 const startGame = () => {
@@ -79,5 +78,3 @@ const hardMode = () => {
     maxGuess = 5;
     startGame();
 }
-});
-
